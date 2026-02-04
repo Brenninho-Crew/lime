@@ -791,7 +791,7 @@ class IOSPlatform extends PlatformTarget
 
 		for (archID in 0...6)
 		{
-			var arch = ["armv6", "armv7", "armv7s", "arm64", "i386", "x86_64"][archID];
+			var arch = ["armv6", "armv7", "armv7s", "arm64", "i386", "x86_64", "arm64-sim"][archID];
 
 			if (arch == "armv6" && !context.ARMV6) continue;
 
@@ -807,7 +807,8 @@ class IOSPlatform extends PlatformTarget
 				".iphoneos-v7s.a",
 				".iphoneos-64.a",
 				".iphonesim.a",
-				".iphonesim-64.a"
+				".iphonesim-64.a",
+				".iphonesim-arm64.a",
 			][archID];
 
 			System.mkdir(projectDirectory + "/lib/" + arch);
