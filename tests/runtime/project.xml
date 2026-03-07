@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	
-	<meta title="Validation" package="org.openfl.lime.validation" version="1.0.0" company="OpenFL" />
-	<app file="TestMain" main="TestMain" path="build" />
-	
-	<source path="test" />
-	
-	<haxelib name="lime" />
-	<haxelib name="munit" />
-	<haxelib name="mlib" />
-	<haxelib name="hamcrest" />
-	<haxelib name="format" />
-	
-	<!-- <template path="src/index.html" rename="index.html" if="html5" />
-	-->
+    
+    <!-- Application Information -->
+    <meta 
+        title="OpenFL Lime Validation Suite"
+        package="org.openfl.lime.validation"
+        version="1.0.0"
+        company="OpenFL"
+    />
+    
+    <!-- Entry Point -->
+    <app file="TestMain" main="TestMain" path="build" />
+    
+    <!-- Source Directories -->
+    <source path="test" />
+    
+    <!-- Required Haxelibs -->
+    <haxelib name="lime" />
+    <haxelib name="munit" />
+    <haxelib name="mlib" />
+    <haxelib name="hamcrest" />
+    <haxelib name="format" />
+    
+    <!-- Platform-Specific Templates -->
+    <template path="src/index.html" rename="index.html" if="html5" />
+    
+    <!-- Default Window Settings -->
+    <window 
+        width="800"
+        height="600"
+        fps="60"
+        background="#FFFFFF"
+        hardware="true"
+        resizable="true"
+    />
+    
 </project>
