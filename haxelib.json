@@ -1,15 +1,55 @@
 {
-	"name": "lime",
-	"url": "https://github.com/openfl/lime",
-	"license": "MIT",
-	"tags": [],
-	"description": "A foundational Haxe framework for cross-platform development",
-	"version": "8.1.2",
-	"releasenote": "Various bug fixes",
-	"contributors": [
-		"singmajesty",
-		"bowlerhat",
-		"Dimensionscape"
-	],
-	"classPath": "src"
+    "name": "lime",
+    "url": "https://github.com/openfl/lime",
+    "license": "MIT",
+    "tags": [
+        "cross-platform",
+        "game-development",
+        "framework",
+        "graphics",
+        "audio",
+        "input",
+        "window",
+        "opengl",
+        "webgl",
+        "mobile",
+        "desktop",
+        "html5",
+        "flash",
+        "native"
+    ],
+    "description": "A foundational Haxe framework for cross-platform development. Provides unified APIs for windowing, input, audio, rendering contexts, assets, and network access across all major platforms.",
+    "version": "9.0.0",
+    "releasenote": "Major release with improved performance, enhanced platform support, and new features. See CHANGELOG.md for details.",
+    "contributors": [
+        "singmajesty",
+        "bowlerhat",
+        "Dimensionscape",
+        "player_03",
+        "jgranick"
+    ],
+    "classPath": "src",
+    "dependencies": {
+        "hxcpp": "4.2.1",
+        "format": "3.5.0"
+    },
+    "main": "lime.tools.CLI",
+    "build": {
+        "date": "2026-03-07",
+        "commit": "latest",
+        "branch": "master"
+    },
+    "documentation": {
+        "homepage": "https://lime.openfl.org",
+        "api": "https://api.lime.openfl.org",
+        "examples": "https://github.com/openfl/lime-samples"
+    },
+    "issueTracker": "https://github.com/openfl/lime/issues",
+    "discussion": "https://community.openfl.org",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.githubusercontent.com/openfl/lime/master/LICENSE.md"
+        }
+    ]
 }
